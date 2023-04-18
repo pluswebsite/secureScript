@@ -1,4 +1,4 @@
-<html><head><link rel="icon" href="favicon.png" type="image/png"><link
+<html><head><title>SecureScript - Editor</title><link rel="icon" href="favicon.png" type="image/png"><link
   rel="stylesheet"
   href="https://unpkg.com/tippy.js@6/animations/scale.css"
 /><style>
@@ -115,7 +115,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     }
   function debugg(){
 	try{eval(cns.out.innerHTML)}
-	catch(e){editor.inp.value = editor.inp.value + "\n \n //" + e.name + ": " + e.message;}
+	catch(e){alert("\n \n //" + e.name + ": " + e.message);}
 }
     function encode(q){
       var output = JSFuck.encode(q, true, true);
