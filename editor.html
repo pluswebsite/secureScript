@@ -130,6 +130,11 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 		toSave.fuck = cns.out.innerHTML;
 		prepareDownload(toSave)
 	}
+	window.onload = function(){
+		document.getElementsByTagName("div")[3].remove()
+		document.getElementsByTagName("div")[3].remove()
+		document.getElementsByTagName("div")[3].remove()
+	}
 	function prepareDownload(obj){;
 const blob = new Blob([JSON.stringify(obj, null, 2)], {
   type: "application/json",
